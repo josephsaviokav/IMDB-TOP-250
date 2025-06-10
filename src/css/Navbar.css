@@ -5,16 +5,19 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: yellow;
 }
 
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
+  color: yellow;
 }
 
 .navbar-links {
   display: flex;
   gap: 2rem;
+  color: yellow;
 }
 
 .nav-link {
@@ -22,26 +25,32 @@
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.2s;
+  color: yellow;
 }
 
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  color: yellow;
 }
 
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;
+    color: yellow;
   }
 
   .navbar-brand {
     font-size: 1.2rem;
+    color: yellow;
   }
 
   .navbar-links {
     gap: 1rem;
+    color: yellow;
   }
 
   .nav-link {
     padding: 0.5rem;
+    color: yellow;
   }
 }
