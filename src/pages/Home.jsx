@@ -2,7 +2,7 @@ import MovieCard from "../components/MovieCard";
 import { useState, useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../services/api";
 import "../css/Home.css";
-
+import LoadingScreen from "../components/LoadingScreen";
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
@@ -34,7 +34,7 @@ function Home() {
         {error && <div className="error-message">{error}</div>}
 
       {loading ? (
-        <div className="loading">Loading...</div>
+        <div className="loading"><LoadingScreen /></div>
       ) : (
         <div className="movies-grid">
           {movies.map((movie) => (
